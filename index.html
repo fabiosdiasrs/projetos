@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript</title>
+	
+</head>
+<body>
+
+	<p>Problema 1: substitui número na string de um array</p>
+	<p id="array">[" h3ll0 w0rld", " w3b d3v3l0p3r ", "0tterw1s3", "j4v4scr1pt "] </p>
+	<button onclick="problema1()">
+		substituir
+	</button>
+	<p>Problema 02: Ordenação de Arrays de Objetos</p>
+
+	<button onclick="ordenaIdadeCrescente()">
+		Crescente
+	</button>
+	<button onclick="ordenaIdadeDecrescente()">
+		Decrescente
+	</button>
+	<p>Filtro</p>
+	<label for="cars">Selecione o filtro</label>
+	<form onsubmit="filtrar()">
+		<select name="filter" id="filter">
+		    <option value="id">id</option>
+		    <option value="nome">nome</option>
+		    <option value="idade">idade</option>
+		    <option value="salario">salario</option>
+		    <option value="senioridade">senioridade</option>
+		</select>
+		<input type="text" name="valor" id="valor">
+		<input type="submit" value="Enviar">
+	</form>
+	<p>Soma Salários</p>
+	<button onclick="somaSalario()">
+		Soma
+	</button>
+
+	<p>Problema 3: Dado o array de objetos abaixo, faça um programa que imprime no console o nome, cpf e telefone formatados conforme o exemplo.</p>
+	<button onclick="formata()">
+		Formata
+	</button>
+	<p>Problema 04:
+Utilizando a api da viacep (https://viacep.com.br/) e o seu cep como entrada
+imprima o seu endereço no formato ‘ENDERECO, NUMERO, CIDADE/ESTADO’. Utilize a
+fetch API para realizar a requisição.</p>
+	<!-- Inicio do formulario -->
+      <div class="container">
+        <h1>Consultando CEP</h1>
+        <form>
+            <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" maxlength="9" id="cep">
+                <small>00000-000</small>
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+                <small>Rua.</small>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+                <small>Bairro</small>
+            </div>
+            <div class="form-group">
+                <label for="localidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade">
+                <small>Cidade</small>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF</label>
+                <input type="text" class="form-control" id="uf">
+                <small>Estado</small>
+            </div>
+        </form>
+    </div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
