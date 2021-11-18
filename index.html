@@ -8,20 +8,22 @@
 </head>
 <body>
 
-	<p>Problema 1: substitui número na string de um array</p>
+	<h1>Problema 1:</h1><p>substitui número na string de um array</h1>
 	<p id="array">[" h3ll0 w0rld", " w3b d3v3l0p3r ", "0tterw1s3", "j4v4scr1pt "] </p>
+	<p>Clique no botão substituir</p>
 	<button onclick="problema1()">
 		substituir
 	</button>
-	<p>Problema 02: Ordenação de Arrays de Objetos</p>
-
+	<h1>Problema 02:</h1><p>Tendo como entrada um array de objetos, crie um programa que realiza as
+seguintes operações e imprime cada uma delas no console:</p>
+	<p>Clique nos botões para visualizar o resultado</p>
 	<button onclick="ordenaIdadeCrescente()">
 		Crescente
 	</button>
 	<button onclick="ordenaIdadeDecrescente()">
 		Decrescente
 	</button>
-	<p>Filtro</p>
+	<h4>Filtro</h4>
 	<label for="cars">Selecione o filtro</label>
 	<form onsubmit="filtrar()">
 		<select name="filter" id="filter">
@@ -31,25 +33,24 @@
 		    <option value="salario">salario</option>
 		    <option value="senioridade">senioridade</option>
 		</select>
-		<input type="text" name="valor" id="valor">
+		<input type="text" name="valor" id="valor" placeholder="insira o valor">
 		<input type="submit" value="Enviar">
 	</form>
 	<p>Soma Salários</p>
+	<p>Precione o botão soma e visualize o resultado no console</p>
 	<button onclick="somaSalario()">
 		Soma
 	</button>
 
-	<p>Problema 3: Dado o array de objetos abaixo, faça um programa que imprime no console o nome, cpf e telefone formatados conforme o exemplo.</p>
+	<h1>Problema 3:</h1> <p>Dado o array de objetos abaixo, faça um programa que imprime no console o nome, cpf e telefone formatados conforme o exemplo.</p>
 	<button onclick="formata()">
 		Formata
 	</button>
-	<p>Problema 04:
-Utilizando a api da viacep (https://viacep.com.br/) e o seu cep como entrada
-imprima o seu endereço no formato ‘ENDERECO, NUMERO, CIDADE/ESTADO’. Utilize a
-fetch API para realizar a requisição.</p>
+	<h1>Problema 04:</h1>
+	<p>Utilizando a api da viacep (https://viacep.com.br/) e o seu cep como entrada imprima o seu endereço no formato ‘ENDERECO, NUMERO, CIDADE/ESTADO’. Utilize <a href=""></a>fetch API para realizar a requisição.</p>
 	<!-- Inicio do formulario -->
       <div class="container">
-        <h1>Consultando CEP</h1>
+        <h3>Consultando CEP</h3>
         <form>
             <div class="form-group">
                 <label for="cep">CEP</label>
@@ -77,6 +78,7 @@ fetch API para realizar a requisição.</p>
                 <small>Estado</small>
             </div>
         </form>
+        <p>OBS: Para minha cidade Canguçu/RS não existe cep para rua o cep é da cidade, portanto não irá mostrar rua e bairro. Mas funciona para qualquer cep</p>
     </div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
